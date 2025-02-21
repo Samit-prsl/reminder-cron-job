@@ -1,0 +1,26 @@
+{
+  "name": "reminder",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+  "build": "bun run tsc",
+  "start": "bun src/index.ts"
+}
+,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
+    "@types/node-cron": "^3.0.11",
+    "@types/twilio": "^3.19.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3",
+    "twilio": "^5.4.5"
+  }
+}
