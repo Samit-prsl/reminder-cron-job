@@ -1,0 +1,13 @@
+name: Send Water Reminder
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"  
+  workflow_dispatch: 
+
+jobs:
+  run-cron-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Reminder API
+        run: curl -X GET https://your-server.com/send-reminder
